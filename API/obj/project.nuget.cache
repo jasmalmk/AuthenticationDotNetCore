@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LE29dT7fQ5lVnlvGtDL3Kqb+6NvCgL0F17e4KO7eb4sCwD4mEurLrIgi42u0Natviz33dTBdEVeWZKLepY69rQ==",
+  "success": true,
+  "projectFilePath": "D:\\awqaf projects\\2022\\IdentityServer4-main\\AuthTutorials\\Authentication\\API\\API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jasmal.mupatta\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.14\\microsoft.netcore.app.host.win-x64.5.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}

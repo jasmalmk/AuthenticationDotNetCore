@@ -36,6 +36,7 @@ namespace Server
 
                 config.TokenValidationParameters = new TokenValidationParameters()
                 {
+                    ClockSkew=TimeSpan.Zero,
                     ValidIssuer = Constatnts.Issuer,
                     ValidAudience = Constatnts.Audiance,
                     IssuerSigningKey = key
