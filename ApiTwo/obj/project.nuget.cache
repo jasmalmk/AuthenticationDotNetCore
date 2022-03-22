@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "zQPOke1qtLimjjez/9hFuKla6GcxXcwz0DclJWupBuNjXGic6lWjqYNLvIwXmak8ZK9viHYT7Ru2UpPw7dmG0Q==",
+  "success": true,
+  "projectFilePath": "D:\\awqaf projects\\2022\\IdentityServer4-main\\AuthTutorials\\Authentication\\ApiTwo\\ApiTwo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jasmal.mupatta\\.nuget\\packages\\identitymodel\\5.0.0\\identitymodel.5.0.0.nupkg.sha512",
+    "C:\\Users\\jasmal.mupatta\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.5\\microsoft.aspnetcore.authentication.jwtbearer.5.0.5.nupkg.sha512",
+    "C:\\Users\\jasmal.mupatta\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\jasmal.mupatta\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.7.1\\microsoft.identitymodel.jsonwebtokens.6.7.1.nupkg.sha512",
+    "C:\\Users\\jasmal.mupatta\\.nuget\\packages\\microsoft.identitymodel.logging\\6.7.1\\microsoft.identitymodel.logging.6.7.1.nupkg.sha512",
+    "C:\\Users\\jasmal.mupatta\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.7.1\\microsoft.identitymodel.protocols.6.7.1.nupkg.sha512",
+    "C:\\Users\\jasmal.mupatta\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.7.1\\microsoft.identitymodel.protocols.openidconnect.6.7.1.nupkg.sha512",
+    "C:\\Users\\jasmal.mupatta\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.7.1\\microsoft.identitymodel.tokens.6.7.1.nupkg.sha512",
+    "C:\\Users\\jasmal.mupatta\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.7.1\\system.identitymodel.tokens.jwt.6.7.1.nupkg.sha512",
+    "C:\\Users\\jasmal.mupatta\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
+    "C:\\Users\\jasmal.mupatta\\.nuget\\packages\\system.text.encodings.web\\5.0.0\\system.text.encodings.web.5.0.0.nupkg.sha512",
+    "C:\\Users\\jasmal.mupatta\\.nuget\\packages\\system.text.json\\5.0.0\\system.text.json.5.0.0.nupkg.sha512",
+    "C:\\Users\\jasmal.mupatta\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.14\\microsoft.netcore.app.host.win-x64.5.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}
