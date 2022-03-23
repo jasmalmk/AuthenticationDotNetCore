@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
-namespace Basics.Controllers
+namespace Mv.Controllers
 {
     public class HomeController : Controller
     {
