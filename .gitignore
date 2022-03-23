@@ -6,3 +6,15 @@
 /IdentityExample/obj
 /Server/bin
 /Server/obj
+/ApiOne/bin
+/ApiOne/obj
+/ApiTwo/bin
+/ApiTwo/obj
+/API/bin
+/API/obj
+/Authentication/bin
+/Authentication/obj
+/IdentityServer/bin
+/IdentityServer/obj
+/MvcProject/bin
+/MvcProject/obj
