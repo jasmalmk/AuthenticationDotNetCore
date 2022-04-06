@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -25,11 +26,25 @@ namespace MvcProject
                     config.ClientId = "client_id_mvc";
                     config.ClientSecret = "client_secret_mvc";
                     config.SaveTokens = true;
-
                     config.ResponseType = "code";
+
+                    //coockie claim maping
+                    config.ClaimActions.DeleteClaim("amr");
+                    config.ClaimActions.MapUniqueJsonKey("RawCoding.Grandma", "rc.grandma");
+
+                    //two trips to load claims in to coockie
+                    //but id token will be smaller
+                    config.GetClaimsFromUserInfoEndpoint = true;
+                    //configure scope
+                    config.Scope.Clear();
+                    config.Scope.Add("openid");
+                    config.Scope.Add("rc.scope");
+                    config.Scope.Add("ApiOne");
+                    config.Scope.Add("ApiTwo");
+                    config.Scope.Add("offline_access");
                 });
 
-
+            services.AddHttpClient();
             services.AddControllersWithViews();
         }
 

@@ -39,3 +39,4 @@ D:\awqaf projects\2022\IdentityServer4-main\AuthTutorials\Authentication\MvcProj
 D:\awqaf projects\2022\IdentityServer4-main\AuthTutorials\Authentication\MvcProject\obj\Debug\net5.0\ref\MvcProject.dll
 D:\awqaf projects\2022\IdentityServer4-main\AuthTutorials\Authentication\MvcProject\obj\Debug\net5.0\MvcProject.pdb
 D:\awqaf projects\2022\IdentityServer4-main\AuthTutorials\Authentication\MvcProject\obj\Debug\net5.0\MvcProject.genruntimeconfig.cache
+D:\awqaf projects\2022\IdentityServer4-main\AuthTutorials\Authentication\MvcProject\bin\Debug\net5.0\IdentityModel.dll

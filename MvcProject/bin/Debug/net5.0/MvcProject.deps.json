@@ -33,6 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "MvcProject/1.0.0": {
         "dependencies": {
+          "IdentityModel": "5.0.0",
           "Microsoft.AspNetCore.Authentication.OpenIdConnect": "5.0.5",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
@@ -287,8 +288,8 @@
           "System.Text.Encoding.CodePages": "5.0.0.0",
           "System.Text.Encoding": "5.0.0.0",
           "System.Text.Encoding.Extensions": "5.0.0.0",
-          "System.Text.Encodings.Web": "5.0.0.0",
-          "System.Text.Json": "5.0.0.0",
+          "System.Text.Encodings.Web.Reference": "5.0.0.0",
+          "System.Text.Json.Reference": "5.0.0.0",
           "System.Text.RegularExpressions": "5.0.0.0",
           "System.Threading.Channels": "5.0.0.0",
           "System.Threading": "5.0.0.0",
@@ -323,6 +324,21 @@
         },
         "compile": {
           "MvcProject.dll": {}
+        }
+      },
+      "IdentityModel/5.0.0": {
+        "dependencies": {
+          "System.Text.Encodings.Web": "5.0.0",
+          "System.Text.Json": "5.0.0"
+        },
+        "runtime": {
+          "lib/net5.0/IdentityModel.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/IdentityModel.dll": {}
         }
       },
       "Microsoft.AspNetCore.Authentication.OpenIdConnect/5.0.5": {
@@ -427,6 +443,8 @@
         }
       },
       "System.Security.Cryptography.Cng/4.5.0": {},
+      "System.Text.Encodings.Web/5.0.0": {},
+      "System.Text.Json/5.0.0": {},
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Antiforgery.dll": {}
@@ -1945,13 +1963,13 @@
         },
         "compileOnly": true
       },
-      "System.Text.Encodings.Web/5.0.0.0": {
+      "System.Text.Encodings.Web.Reference/5.0.0.0": {
         "compile": {
           "System.Text.Encodings.Web.dll": {}
         },
         "compileOnly": true
       },
-      "System.Text.Json/5.0.0.0": {
+      "System.Text.Json.Reference/5.0.0.0": {
         "compile": {
           "System.Text.Json.dll": {}
         },
@@ -2133,6 +2151,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "IdentityModel/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6RrLvB00uRlsrqGL6BGRegRDBpW2/VMfI/uypxkJ6xk12H8r9YuIz8MdfgIeYz7BBQaWJ294GSWJao48nOKskQ==",
+      "path": "identitymodel/5.0.0",
+      "hashPath": "identitymodel.5.0.0.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Authentication.OpenIdConnect/5.0.5": {
       "type": "package",
       "serviceable": true,
@@ -2195,6 +2220,20 @@
       "sha512": "sha512-WG3r7EyjUe9CMPFSs6bty5doUqT+q9pbI80hlNzo2SkPkZ4VTuZkGWjpp77JB8+uaL4DFPRdBsAY+DX3dBK92A==",
       "path": "system.security.cryptography.cng/4.5.0",
       "hashPath": "system.security.cryptography.cng.4.5.0.nupkg.sha512"
+    },
+    "System.Text.Encodings.Web/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EEslUvHKll1ftizbn20mX3Ix/l4Ygk/bdJ2LY6/X6FlGaP0RIhKMo9nS6JIGnKKT6KBP2PGj6JC3B9/ZF6ErqQ==",
+      "path": "system.text.encodings.web/5.0.0",
+      "hashPath": "system.text.encodings.web.5.0.0.nupkg.sha512"
+    },
+    "System.Text.Json/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+luxMQNZ2WqeffBU7Ml6njIvxc8169NW2oU+ygNudXQGZiarjE7DOtN7bILiQjTZjkmwwRZGTtLzmdrSI/Ustw==",
+      "path": "system.text.json/5.0.0",
+      "hashPath": "system.text.json.5.0.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
       "type": "referenceassembly",
@@ -3461,12 +3500,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Text.Encodings.Web/5.0.0.0": {
+    "System.Text.Encodings.Web.Reference/5.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
     },
-    "System.Text.Json/5.0.0.0": {
+    "System.Text.Json.Reference/5.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

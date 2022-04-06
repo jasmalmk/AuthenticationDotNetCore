@@ -10,13 +10,7 @@ namespace IdentityServer.Configs
 {
     public static class Configuration
     {
-        public static IEnumerable<IdentityResource> GetIdentityResources() =>
-           new List<IdentityResource>
-           {
-                new IdentityResources.OpenId(),
-                new IdentityResources.Profile(),
-
-           };
+      
         public static IEnumerable<ApiResource> GetApis() =>
             new List<ApiResource>
             {
@@ -41,16 +35,60 @@ namespace IdentityServer.Configs
                     ClientSecrets={new Secret("client_secret_mvc".ToSha256())},
                     AllowedGrantTypes=GrantTypes.Code,
                    RedirectUris={ "https://localhost:44314/signin-oidc" },
-                    AllowedScopes={ "ApiOne", "ApiTwo",
+                    AllowedScopes={
+                        "ApiOne", 
+                        "ApiTwo",
                     IdentityServerConstants.StandardScopes.OpenId,
-                    IdentityServerConstants.StandardScopes.Profile
+                    //IdentityServerConstants.StandardScopes.Profile,
+                    "rc.scope"
                     },
-                    RequireConsent=false
+
+                    //puts all the claims in the id token
+                    //AlwaysIncludeUserClaimsInIdToken=true, 
+                    RequireConsent=false,
+                    AllowOfflineAccess=true
                 }
+                ,
+                new Client
+                {
+                    ClientId="client_id_js",
+                    AllowedGrantTypes=GrantTypes.Implicit,
+
+                   RedirectUris={ "https://localhost:44365/home/signin" },
+                   AllowedCorsOrigins={ "https://localhost:44365" },
+                    AllowedScopes={
+                         IdentityServerConstants.StandardScopes.OpenId,
+                        "ApiOne",
+                        "ApiTwo",
+                        "rc.scope"
+                    },
+                    RequireConsent=false,
+                    AllowAccessTokensViaBrowser=true,
+                    AccessTokenLifetime=1
+                }
+
+
             };
 
         internal static List<ApiScope> Scopes = new List<ApiScope> {
-            new ApiScope{Name = "ApiOne"}
+            new ApiScope{Name = "ApiOne"},
+            new ApiScope{Name = "ApiTwo"},
         };
+
+        public static IEnumerable<IdentityResource> GetIdentityResources() =>
+         new List<IdentityResource>
+         {
+                new IdentityResources.OpenId(),
+                new IdentityResources.Profile(),
+                new IdentityResource
+                {
+                    Name="rc.scope",
+                    UserClaims =
+                    {
+                        "rc.grandma"
+                    }
+                }
+
+         };
     }
 }

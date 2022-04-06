@@ -31,7 +31,7 @@ namespace Client
                 .AddOAuth("OurServer",config=> {
                     config.ClientId = "client_id";
                     config.ClientSecret = "client_secret";
-                    config.CallbackPath = "/oauth/callback";
+                    config.CallbackPath = "/uaepass";
                     config.AuthorizationEndpoint = "https://localhost:44394/oauth/authorizae";
                     config.TokenEndpoint = "https://localhost:44394/oauth/token";
                     config.SaveTokens = true;
